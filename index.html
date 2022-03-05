@@ -1,0 +1,26 @@
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>HTML</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+  <span class="num"></span>
+  
+  <script>
+    var num = 5,
+    a = 1,
+    qry = document.querySelector('.num');
+    var concat = '';
+      for (i = 0; i < num; i++) {
+          a = a * (num - i);
+          concat += num-i+' x ';
+      }
+    var factorial = concat.substring(0, concat.length - 3);
+    qry.innerHTML = (num + '! = '+ factorial +' = ' + a);
+  </script>
+  
+</body>
+</html>
+
